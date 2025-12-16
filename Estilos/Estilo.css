@@ -287,7 +287,7 @@ h1{
 
 div aside img{
 	max-height:500px;
-	max-width: 80%;
+	max-width: 70%;
 	border-radius:10%; /* Ajuste para que coincida con el aside */
 }
 
@@ -640,3 +640,4 @@ div aside img{
     }
 
 }
+
