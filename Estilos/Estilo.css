@@ -1,0 +1,640 @@
+html {
+	scroll-behavior: smooth; 
+	scroll-padding-top: 100px;
+}
+
+
+
+/*FUENTES CALIGRÁFICAS*/
+.archivo{
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Recomendado para evitar problemas de padding */
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between; /* Cambié a space-between para separar logo y menú */
+	align-items: center; /* Centrar verticalmente */
+	transition: 0.7s;
+	padding: 30px 40px; /* Aumenté un poco el padding lateral */
+	z-index: 10;
+}
+header.abajo{
+	background: #fff;
+	padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra opcional para que se vea mejor */
+}
+
+/* Estilos para el texto del logo */
+header .logo{
+	position: relative;
+	color: #fff;
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: 2px;
+	transition: 1.5s;
+	text-decoration: none;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li{
+	list-style: none;
+}
+
+header ul li a{
+	position: relative;
+	font-family: helvetica, sans-serif; 
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 600;
+	transition: 0.7s;
+    cursor: pointer; /* Para que parezca botón */
+}
+
+.zona1{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(../Imagenes/Personas.png); 
+	background-size: cover;
+	background-position: center center;
+	display: flex; /* Habilitar Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.zona1 img {
+    max-width: 80%; /* Asegura que la imagen no exceda el 80% del ancho del contenedor */
+    max-height: 80vh; /* Limita la altura de la imagen para que quepa en la pantalla */
+    width: auto; /* Mantiene la proporción de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Cambio de colores al bajar */
+header.abajo .logo,
+header.abajo ul li a{
+	color: #143661;
+}
+
+/* --- ESTILOS PARA CELULARES --- */
+@media (max-width: 768px) {
+	
+	html {
+		scroll-padding-top: 270px; 
+    }
+   
+    /* Ajustar el header */
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        text-align: center;
+        background: #fff; 
+    }
+
+    header.abajo {
+        padding: 8px 20px;
+    }
+
+    header .logo-container {
+        margin-bottom: 10px;
+    }
+
+    header ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    header ul li {
+        margin: 4px 0;
+    }
+
+    header ul li a {
+        font-size: 1em;
+        color: #143661;
+    }
+    
+    header .logo {
+        font-size: 1em;
+        color: #143661; 
+    }
+	
+	.mun-content {
+        flex-direction: column;
+    }
+
+    /* Permite que la imagen y su contenedor ocupen todo el ancho disponible */
+    .mun-image {
+        flex-basis: auto;
+        max-width: 100%;
+        text-align: center; /* Centra la imagen al estar debajo */
+        margin-top: 20px; /* Un poco de espacio entre el texto y la imagen */
+    }
+	
+	.c-content {
+        flex-direction: column; /* Apila la imagen y el texto verticalmente */
+    }
+
+    .c-image {
+        /* Opcional: Centra la imagen y asegura que ocupe todo el ancho disponible si es necesario */
+        flex-basis: auto !important; /* Anula el 30% fijo y permite que ocupe el espacio */
+        text-align: center !important; /* Centra la imagen al estar en columna */
+        margin-bottom: 20px; /* Agrega espacio debajo de la imagen */
+    }
+
+    .c-image img {
+        width: 100%; /* La imagen puede ocupar todo el ancho si quieres */
+        max-width: 400px; /* Limita el ancho de la imagen para que no sea demasiado grande en móvil */
+    }
+
+    .c-text {
+        text-align: left; /* Alineación del texto nuevamente a la izquierda */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* CONTENIDO */
+
+section div{
+	height: 1000px; 
+	padding: 40px;
+}
+
+h1{
+	font-size:50px;
+}
+
+.Azul{
+    background-color:#143661;
+    color:#dde5e8;
+    height: auto; /* IMPORTANTE: Altura automática para el contenido */
+    padding: 40px; /* Asegura un padding */
+}
+
+.Blanco{
+    background-color:#fff;
+    color:#143661;
+    height: auto; /* IMPORTANTE: Altura automática para el contenido */
+    padding: 40px; /* Asegura un padding */
+}
+
+/* --- ESTILOS PARA LA SECCIÓN MUN --- */
+
+.mun-content {
+    display: flex;
+    gap: 40px; /* Espacio entre el texto y la imagen */
+    align-items: flex-start; /* Alinea los elementos al inicio (parte superior) */
+}
+
+.mun-text {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+	text-align:justify;
+}
+
+.mun-image {
+    /* Contenedor para la imagen, ocupa el 80% del espacio del .mun-content (menos el texto) */
+    flex-basis: 60%; /* Ajusta el ancho inicial del contenedor de la imagen */
+    max-width: 100%;
+    text-align: right; /* Alinea la imagen a la derecha dentro de su contenedor */
+}
+
+.mun-image img {
+    width: 100%; /* La imagen ocupa todo el ancho de su contenedor (.mun-image) */
+    height: auto;
+    max-height: 80vh; /* Para que la imagen no sea demasiado alta */
+    border-radius: 8px; /* Opcional: añade un borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: añade una sombra */
+}
+
+/* --- ESTILOS PARA LA SECCIÓN FALCONMUN --- */
+/* Contenedor Flexbox para agrupar los aside de cada comité */
+.comite-container {
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    justify-content: center; /* Centra los elementos horizontalmente en el contenedor */
+    gap: 20px; /* Espacio entre los elementos aside */
+    margin-bottom: 40px; /* Espacio debajo de cada comité */
+}
+
+.comite-container aside {
+    /* --- AJUSTE CLAVE: Permite que el aside se contraiga al ancho del contenido (la imagen) --- */
+    flex: 0 1 auto; /* Base a 'auto' y no permite crecer/encoger arbitrariamente */
+    /* max-width: 300px; <-- ELIMINADO */
+    box-sizing: border-box;
+    text-align: center;
+    
+    /* Mantenemos tus estilos de borde y ajustamos el radio para que la imagen se vea bien */
+    border: solid;
+    border-color: #608aab;
+    border-radius: 10%; /* Ajuste para que coincida con la imagen */
+    padding: 5px;
+    
+    /* Limpiamos estilos redundantes de tu CSS anterior */
+    margin-right: 0; 
+    margin-left: 0;
+    max-width: none; /* Eliminamos el max-width original que estaba fuera del div */
+}
+
+.comite-img{
+	max-height:500px;
+	border-radius:10%; /* Ajuste para que coincida con el aside */
+}
+
+div aside img{
+	max-height:500px;
+	border-radius:10%; /* Ajuste para que coincida con el aside */
+}
+
+.c-content {
+    display: flex;
+    gap: 0; /* Espacio entre el texto y la imagen */
+    align-items: flex-start; /* Alinea los elementos al inicio (parte superior) */
+}
+
+.c-text {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+	text-align:justify;
+  padding: 0 0 0 30px;
+}
+
+.c-image {
+    max-width: 100%;
+    text-align: right; /* Alinea la imagen a la derecha dentro de su contenedor */
+}
+
+.c-image img {
+    height: auto;
+    max-height: 600px; /* Para que la imagen no sea demasiado alta */
+    border-radius: 8px; /* Opcional: añade un borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: añade una sombra */
+}
+
+
+
+
+
+
+/*Página de carga*/
+
+/* From Uiverse.io by NlghtM4re */ 
+.loader {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.loader div {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  animation: move 4s infinite;
+}
+
+.loader div:nth-child(1) {
+  background-color: rgb(20,54,97);
+  box-shadow: rgb(69,101,143) 0px 7px 29px 0px;
+  transform: translate(-30px,-30px);
+  animation-delay: -1s;
+}
+
+.loader div:nth-child(2) {
+  background-color: rgb(20,54,97);
+  box-shadow: rgb(69,101,143) 0px 7px 29px 0px;
+  transform: translate(30px,-30px);
+  animation-delay: -2s;
+}
+
+.loader div:nth-child(3) {
+  background-color: rgb(20,54,97);
+  box-shadow: rgb(69,101,143) 0px 7px 29px 0px;
+  transform: translate(30px,30px);
+  animation-delay: -3s;
+}
+
+.loader div:nth-child(4) {
+  background-color: rgb(20,54,97);
+  box-shadow: rgb(69,101,143) 0px 7px 29px 0px;
+  transform: translate(-30px,30px);
+  animation-delay: -4s;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30px, -30px);
+  }
+
+  25% {
+    transform: translate(30px, -30px);
+  }
+
+  50% {
+    transform: translate(30px, 30px);
+  }
+
+  75% {
+    transform: translate(-30px, 30px);
+  }
+
+  100% {
+    transform: translate(-30px, -30px);
+  }
+}
+
+/*Control pantalla carga*/
+
+.loading-screen {
+    width: 100%;
+    height: 100vh;
+    background-color: #EBEFF2;
+    position: fixed;
+    top: 0; /* Asegura que esté en la parte superior */
+    left: 0; /* Asegura que esté en la parte izquierda */
+    z-index: 1000; /* Asegura que esté por encima de todo, incluyendo el header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease; /* Transición para el desvanecimiento */
+}
+
+/* Oculta el contenido principal por defecto */
+.content {
+    display: none; 
+}
+
+
+
+
+
+/*--- BOTÓN ---*/
+
+/* Contenedor para darle un margen respecto al texto anterior */
+.btn-registro-container {
+  display: flex;
+  justify-content: flex-start; /* Alineado a la izquierda junto al texto */
+  margin-top: 30px; /* Espacio arriba del botón */
+}
+
+.btn-registro {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 160px;  /* Ancho ajustado */
+  height: 45px;  /* Alto ajustado */
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+  font-family: "Rubik", sans-serif; /* Tu fuente */
+  font-size: 16px;
+  font-weight: 600;
+  color: #143661; /* Azul institucional */
+  border: 2px solid #143661; /* Borde para definir el botón */
+  border-radius: 25px; /* Bordes redondeados */
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  /* Ajuste para centrar el texto visualmente antes del hover */
+  padding-left: 35px; 
+  box-sizing: border-box;
+}
+
+/* El fondo que se desliza */
+.btn-registro::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 0%; /* Empieza vacío */
+  height: 100%;
+  background-color: #143661; /* Azul institucional al rellenar */
+  z-index: -1;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+/* La flecha hecha con CSS */
+.btn-registro::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Posición inicial de la flecha */
+  transform: translateY(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #143661; /* Flecha azul inicialmente */
+  border-right: 2px solid #143661;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+/* --- ESTADOS HOVER (AL PASAR EL MOUSE) --- */
+
+.btn-registro:hover {
+  color: #143661; /* Texto blanco */
+  padding-left: 20px; /* Pequeño desplazamiento del texto */
+}
+
+.btn-registro:hover::before {
+  width: 100%; /* Rellena todo el botón */
+}
+
+.btn-registro:hover::after {
+  right: 25px; /* Mueve la flecha un poco */
+  border-color: #143661; /* Flecha blanca */
+}
+
+.btn-registro:active {
+  transform: scale(0.96); /* Efecto de click */
+}
+
+
+
+
+.btn-registrob {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 160px;  /* Ancho ajustado */
+  height: 45px;  /* Alto ajustado */
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+  font-family: "Rubik", sans-serif; /* Tu fuente */
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff; /* Azul institucional */
+  border: 2px solid #ffffff; /* Borde para definir el botón */
+  border-radius: 25px; /* Bordes redondeados */
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  /* Ajuste para centrar el texto visualmente antes del hover */
+  padding-left: 35px; 
+  box-sizing: border-box;
+}
+
+/* El fondo que se desliza */
+.btn-registrob::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 0%; /* Empieza vacío */
+  height: 100%;
+  background-color: #ffffff; /* Azul institucional al rellenar */
+  z-index: -1;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+/* La flecha hecha con CSS */
+.btn-registrob::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Posición inicial de la flecha */
+  transform: translateY(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #ffffff; /* Flecha azul inicialmente */
+  border-right: 2px solid #ffffff;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+/* --- ESTADOS HOVER (AL PASAR EL MOUSE) --- */
+
+.btn-registrob:hover {
+  color: #ffffff; /* Texto blanco */
+  padding-left: 20px; /* Pequeño desplazamiento del texto */
+}
+
+.btn-registrob:hover::before {
+  width: 100%; /* Rellena todo el botón */
+}
+
+.btn-registrob:hover::after {
+  right: 25px; /* Mueve la flecha un poco */
+  border-color: #ffffff; /* Flecha blanca */
+}
+
+.btn-registrob:active {
+  transform: scale(0.96); /* Efecto de click */
+}
+
+
+/* --- PIE DE PÁGINA ---*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
