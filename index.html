@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ONU Halcones</title>
+	<link rel="stylesheet" type="text/css" href="./Estilos/Estilo.css">
+	<link rel="icon" href="./Imagenes/Logo.jpeg" type="image/x-icon">
+	<script>
+    // Espera 5 segundos y luego oculta la pantalla de carga
+    setTimeout(() => {
+        const loadingScreen = document.querySelector('.loading-screen');
+        loadingScreen.style.opacity = '0'; // Cambia la opacidad a 0 para desvanecer
+        setTimeout(() => {
+            loadingScreen.style.display = 'none'; // Oculta la pantalla de carga
+            document.querySelector('.content').style.display = 'block'; // Muestra el contenido
+        }, 1000); // Espera 1 segundo para que la transición de desvanecimiento se complete
+    },1000); // 4000 ms = 4 segundos
+	</script>
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <header>
+            <a href="" class="logo-container" style="display:flex; align-items:center; text-decoration:none;">
+                <img src="./Imagenes/Logo.jpeg" class="logo-img" style="height:50px; margin-right:10px;border-radius:50%;" href="">
+                <span class="logo , archivo" href="">ONU HALCONES</span>
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="" class="archivo">INICIO</a></li>
+                    <li><a href="#MUN" class="archivo">MUN</a></li>
+                    <li><a href="#PDH" class="archivo">PDH</a></li>
+                    <li><a href="#FALCONMUN" class="archivo">FALCONMUN</a></li>
+					<li><a href="#BASES" class="archivo">BASES</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="zona1">
+            <img src="./Imagenes/LogoG.png">
+        </section>
+        
+        <div class="Azul">
+			<div class="mun-content">
+				<div class="mun-text">
+					<h1 id="MUN" class="archivo">¿Qué es un MUN?</h1>
+					<br><br><br><br>
+					<p class="rubik">Un Modelo de las Naciones Unidas es una simulación académica de una sala de conferencias de las Naciones Unidas. Esta realizada por estudiantes para estudiantes. Cada alumno representa un papel dentro de él, desde los secretarios del comité organizador, hasta los representantes de cada país, llamados delegados.</p>
+					<br>
+					<p class="rubik">Los estudiantes se reúnen para discutir temas de interés global. Se ocupan los recursos del diálogo, negociación y consenso, ya que se debe de llegar a una solución que beneficie a todos o a la mayoría de los países dentro del comité.</p>
+					<br>
+					<p class="rubik">Las Naciones Unidas están conformadas por 5 órganos principales: Asamblea General, Consejo de Seguridad, Consejo Económico y Social, Consejo de Administración Fiduciaria y la Corte Internacional de Justicia. A demás esta la Secretaria, órgano administrativo y burocrático dirigdo por el Secretario General.  </p>
+					<br>
+					<p class="rubik">Todos se establecieron en la Carta de las Naciones Unidas en 1945 , cuando se fundo la organización.</p>
+					<br>
+					<p class="rubik">Todo comité tieme por objetivo llegar a una Hoja de Resolución, documento que contiene las propuestas de solución a los tópicos asignados a dicho comité.</p>
+				</div>
+				<div class="mun-image">
+					<img src="./Imagenes/ONU.jpg">
+				</div>
+			</div>
+		</div>
+        
+        <div class="Blanco">
+            <div class="mun-content">
+				<div class="mun-text">
+					<h1 id="PDH" class="archivo">Programa de Debate Halcones</h1>
+					<br><br><br>
+					<p class="rubik">El Programa de Debate Halcones (PDH) es una organización estudiantil que surge desde la convicción de crear un espacio sólido de formación académica y pensamiento crítico, donde las y los estudiantes de la ENP 9 puedan desarrollar su criterio, fortalecer sus ideas, hacer resonar su voz en cualquier foro y formar parte de una comunidad comprometida con el diálogo, la excelencia y la trascendencia.</p>
+					<br>
+					<p class="rubik">Somos el equipo representativo de debate de la Escuela Nacional Preparatoria N.°9 "Pedro de Alba" de la Universidad Nacional Autónoma de México UNAM, y asumimos con orgullo la responsabilidad de promover el liderazgo desde el análisis fundamentado y la defensa respetuosa de las ideas como herramienta de transformación social.</p>
+					<br>
+					<p class="rubik">Desde nuestros inicios hemos tenido una misión muy clara: crear espacios para otros jóvenes, donde desarrollen habilidades como el liderazgo, el trabajo en equipo y la oratoria, y así sentar las bases de una comunidad comprometida con su entorno y con los valores que distinguen a la Universidad Nacional Autónoma de México, así como inspirar a otras personas para que, juntos, convirtamos los retos en logros y los sueños en realidades.</p>
+					
+					<div class="btn-registro-container">
+						<a href="https://docs.google.com/forms/d/1X6ibBUQsLJ4lZ9tLHyrSTWO08qQtkS3BDIFmHCZOyp4/viewform?fbclid=PAdGRleAMcJ95leHRuA2FlbQIxMQABp2OSdw8yqOTXD_o3QX7qQn5KAJEXtGicc688Zv1yoYMEuGbgKaUarcL5QCH8_aem_RXpuqZmTdUVVDLPy7g8tdg&edit_requested=true" class="btn-registro" target="_blank">Registro</a>
+					</div>
+					
+				</div>
+				<div class="mun-image">
+					<img src="./Imagenes/Parlamento.jpeg">
+				</div>
+			</div>
+        </div>
+        
+        <div class="Azul">
+            <h1 id="FALCONMUN" class="archivo">FALCONMUN</h1>
+			
+			<div class="c-content">
+				<div class="c-image" style="flex-basis: 30%; text-align: left;">
+					<img src="./Imagenes/Comites/8.png" class="comite-img">
+				</div>
+				<div class="c-text">
+					<br><br><br><br>
+					<h2 class="archivo">¿Qué es?</h2>
+					<br>
+					<p class="rubik">El Modelo de Naciones Unidas de la Escuela Nacional Preparatoria No. 9 “Pedro de Alba” de la UNAM, bajo el nombre de FALCONMUN, surge como la expresión firme y comprometida de una juventud que se rehúsa a permanecer en silencio. Nace de la resiliencia, del espíritu indomable de estudiantes que, frente a la adversidad, eligieron levantarse con mayor fuerza, determinación y convicción.</p>
+					<br>
+					<p class="rubik">Este proyecto fue concebido en un contexto de desafíos que pusieron a prueba nuestra integridad y vocación. Fuimos testigos de la injusticia y del descrédito, de la apropiación indebida de nuestras ideas y del menosprecio a nuestras capacidades. Sin embargo, aquello que buscó derribarnos, el día de hoy representa el impulso y la razón que nos hace seguir caminando al éxito.</p>
+					<br>
+					<p class="rubik">FALCONMUN es la prueba viviente de que la excelencia, el liderazgo y la innovación también florecen en nuestras aulas, que dentro de la ENP 9 no somos observadores del futuro, somos los creadores del presente.</p>
+					<br>
+					<h2 class="archivo">¿Cuándo?</h2>
+					<br>
+					<p class="rubik">21, 22 y 23 de Enero de 2026</p>
+					<br>
+					<h2 class="archivo">¿Dónde?</h2>
+					<br>
+					<p class="rubik">Escuela Nacional Preparatoria N° 9 "Pedro de Alba" UNAM: Av. Insurgentes Nte. 1698, Lindavista, Gustavo A. Madero, 07300 Ciudad de México, CDMX</p>
+					
+				</div>
+			</div>
+			
+			<br><br>
+            <h2 class="archivo">General Assembly</h2>
+			<div class="c-content">
+				<div class="c-image" style="flex-basis: 30%; text-align: left;">
+					<img src="./Imagenes/Comites/35.png" class="comite-img">
+					<div class="btn-registro-container">
+						<a href="./Paginas/not_found.html" class="btn-registrob" target="_blank">Handbook</a>
+					</div>
+				</div>
+				<div class="c-text">
+					<h3 class="archivo">What is it?</h3>
+					<br>
+					<p class="rubik">The General Assembly is the main deliberative, policymaking, and representative organ of the United Nations. It is composed of the 193 Member States of the United Nations and serves as a unique forum for multilateral deliberations on the full range of international issues covered by the United Nations Charter. In this body, all Member States have equal voting rights.</p>
+					<br>
+					<h3 class="archivo">Topics</h3>
+					<br>
+					<p class="rubik">Topic A: Strategies to prevent unsafe abortions: promoting international cooperation in maternal health and sexual education.</p>
+					<br>
+					<p class="rubik">Topic B: Ensuring the protection of the human rights of migrants and refugees in transit and host countries through international cooperation.</p>
+					<br>
+					<h3 class="archivo">Faculties</h3>
+					<br>
+					<nav>
+						<ul>
+							<li><p class="rubik">Consider and approve the United Nations budget and establish the financial assessments of Member States.</p></li>
+							<br>
+							<li><p class="rubik">Elect the non-permanent members of the Security Council and the members of other United Nations councils and organs and, on the recommendation of the Security Council, appoint the Secretary-General.</p></li>
+							<br>
+							<li><p class="rubik">Consider and make recommendations on the general principles of cooperation for maintaining international peace and security, including disarmament.</p></li>
+							<br>
+							<li><p class="rubik">Discuss any question relating to international peace and security and, except where a dispute or situation is currently being discussed by the Security Council, make recommendations on it.</p></li>
+							<br>
+							<li><p class="rubik">Discuss, with the same exception, and make recommendations on any questions within the scope of the Charter or affecting the powers and functions of any organ of the United Nations.</p></li>
+							<br>
+							<li><p class="rubik">Initiate studies and make recommendations to promote international political cooperation, the development and codification of international law, the realization of human rights and fundamental freedoms, and international collaboration in the economic, social, humanitarian, cultural, educational and health fields.</p></li>
+							<br>
+							<li><p class="rubik">Make recommendations for the peaceful settlement of any situation that might impair friendly relations among countries.</p></li>
+							<br>
+							<li><p class="rubik">Consider reports from the Security Council and other United Nations organs.</p></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<br><br>
+			
+			<div class="comite-container">
+				<aside>
+					<img src="./Imagenes/Comites/36.png">
+				</aside>
+				<aside>
+					<img src="./Imagenes/Comites/37.png">
+				</aside>
+				<aside>
+					<img src="./Imagenes/Comites/38.png">
+				</aside>
+				<aside>
+					<img src="./Imagenes/Comites/39.png">
+				</aside>
+			</div>
+            
+			<br><br>
+			<h2 class="archivo">OMS (ficticio)</h2>
+			<div class="c-content">
+				<div class="c-image" style="flex-basis: 30%; text-align: left;">
+					<img src="./Imagenes/Comites/29.png" class="comite-img">
+					<div class="btn-registro-container">
+						<a href="./Paginas/not_found.html" class="btn-registrob" target="_blank">Handbook</a>
+					</div>
+				</div>
+				<div class="c-text">
+					<h3 class="archivo">¿Qué es?</h3>
+					<br>
+					<p class="rubik">Fundada en 1948, la OMS es el organismo de las Naciones Unidas que pone en contacto a naciones, asociados y personas a fin de promover la salud, preservar la seguridad mundial y servir a las poblaciones vulnerables, de modo que todo el mundo, allá donde esté, pueda alcanzar el más alto nivel posible de salud.</p>
+					<br>
+					<h3 class="archivo">Tópico</h3>
+					<br>
+					<p class="rubik">Respuesta global ante la mutación y propagación pandémica del virus Neo-Nipah</p>
+					<br>
+					<h3 class="archivo">Facultades</h3>
+					<nav>
+						<ul>
+							<br>
+							<li><p class="rubik">Actuar como autoridad directiva y coordinadora en asuntos de sanidad internacional.</p></li>
+							<br>
+							<li><p class="rubik">Establecer y mantener colaboración eficaz con las Naciones Unidas, los organismos especializados, las administraciones oficiales de salubridad, las agrupaciones profesionales y demás organizaciones que se juzgue convenientes.</p></li>
+							<br>
+							<li><p class="rubik">Ayudar a los gobiernos, a su solicitud, a fortalecer sus servicios de salubridad.</p></li>
+							<br>
+							<li><p class="rubik">Proporcionar ayuda técnica adecuada y, en casos de emergencia, prestar a los gobiernos la cooperación necesaria que soliciten, o acepten.</p></li>
+							<br>
+							<li><p class="rubik">Proveer o ayudar a proveer, a solicitud de las Naciones Unidas, servicios y recursos de salubridad a grupos especiales, tales como los habitantes de los territorios fideicometidos.</p></li>
+							<br>
+							<li><p class="rubik">Establecer y mantener los servicios administrativos y técnicos que sean necesarios, inclusive los epidemiológicos y de estadística.</p></li>
+							<br>
+							<li><p class="rubik">Estimular y adelantar labores destinadas a suprimir enfermedades epidémicas, endémicas y otras.</p></li>
+							<br>
+							<li><p class="rubik">Promover, con la cooperación de otros organismos especializados cuando fuere necesario, la prevención de accidentes.</p></li>
+							<br>
+							<li><p class="rubik">Promover, con la cooperación de otros organismos especializados cuando fuere necesario, el mejoramiento de la nutrición, la habitación, el saneamiento, la recreación, las condiciones económicas y de trabajo, y otros aspectos de la higiene del medio.</p></li>
+							<br>
+							<li><p class="rubik">Promover la cooperación entre las agrupaciones científicas y profesionales que contribuyan al mejoramiento de la salud.</p></li>
+							<br>
+							<li><p class="rubik">Proponer convenciones, acuerdos y reglamentos y hacer recomendaciones referentes a asuntos de salubridad internacional, así como desempeñar las funciones que en ellos se asignen a la Organización y que estén de acuerdo con su finalidad.</p></li>
+							<br>
+							<li><p class="rubik">Promover la salud y la asistencia maternal e infantil, y fomentar la capacidad de vivir en armonía en un mundo que cambia constantemente.</p></li>
+							<br>
+							<li><p class="rubik">Fomentar las actividades en el campo de la higiene mental, especialmente aquellas que afectan las relaciones armónicas de los hombres.</p></li>
+							<br>
+							<li><p class="rubik">Promover y realizar investigaciones en el campo de la salud.</p></li>
+							<br>
+							<li><p class="rubik">Promover el mejoramiento de las normas de enseñanza y adiestramiento en las profesiones de salubridad, medicina y afines.</p></li>
+							<br>
+							<li><p class="rubik">Estudiar y dar a conocer, con la cooperación de otros organismos especializados, cuando fuere necesario, técnicas administrativas y sociales que afecten la salud pública y la asistencia médica desde los puntos de vista preventivo y curativo, incluyendo servicios hospitalarios y el seguro social.</p></li>
+							<br>
+							<li><p class="rubik">Suministrar información, consejo y ayuda en el campo de la salud.</p></li>
+							<br>
+							<li><p class="rubik">Contribuir a crear en todos los pueblos una opinión pública bien informada en asuntos de salud.</p></li>
+							<br>
+							<li><p class="rubik">Establecer y revisar, según sea necesario, la nomenclatura internacional de las enfermedades, de las causas de muerte y de las prácticas de salubridad pública.</p></li>
+							<br>
+							<li><p class="rubik">Establecer normas uniformes de diagnóstico, según sea necesario.</p></li>
+							<br>
+							<li><p class="rubik">Desarrollar, establecer y promover normas internacionales con respecto a productos alimenticios, biológicos, farmacéuticos y similares.</p></li>
+							<br>
+							<li><p class="rubik">En general, tomar todas las medidas necesarias para alcanzar la finalidad que persigue la Organización.</p></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<br><br>
+			
+			
+			<div class="comite-container">
+				<aside>
+					<img src="./Imagenes/Comites/30.png">
+				</aside>
+				<aside>
+					<img src="./Imagenes/Comites/31.png">
+				</aside>
+				<aside>
+					<img src="./Imagenes/Comites/32.png">
+				</aside>
+				<aside>
+					<img src="./Imagenes/Comites/33.png">
+				</aside>
+			</div>
+            
+			<br><br>
+			<h2 class="archivo">ONU Mujeres</h2>
+			<div class="c-content">
+				<div class="c-image" style="flex-basis: 30%; text-align: left;">
+					<img src="./Imagenes/Comites/15.png" class="comite-img">
+					<div class="btn-registro-container">
+						<a href="./Paginas/not_found.html" class="btn-registrob" target="_blank">Handbook</a>
+					</div>
+				</div>
+				<div class="c-text">
+					<h3 class="archivo">¿Qué es?</h3>
+					<br>
+					<p class="rubik">ONU Mujeres existe para promover los derechos de las mujeres, la igualdad de género y el empoderamiento de todas las mujeres y niñas.</p>
+					<br>
+					<p class="rubik">Como entidad líder de la ONU en materia de igualdad de género y secretaría de la Comisión de la Condición Jurídica y Social de la Mujer, impulsamos cambios en las leyes, las instituciones, los comportamientos sociales y los servicios para cerrar la brecha de género y construir un mundo igualitario por y para todas las mujeres y niñas. Nuestras alianzas con gobiernos, movimientos de mujeres y el sector privado, junto con nuestra coordinación del sistema de las Naciones Unidas, traducen el progreso en cambios duraderos.</p>
+					<br>
+					<h3 class="archivo">Tópicos</h3>
+					<br>
+					<p class="rubik">Tópico A: Medidas para erradicar la violencia de genero con énfasis en mujeres indígenas, afrodescendientes y trans en América latina y el Caribe.</p>
+					<br>
+					<p class="rubik">Tópico B: Violencia económica hacia trabajadoras no remuneradas del hogar: reconocimiento legal a causa del trabajo no remunerado, acceso a recursos y autonomía financiera.</p>
+					<br>
+					<h3 class="archivo">Facultades</h3>
+					<nav>
+						<ul>
+							<br>
+							<li><p class="rubik">Brindar apoyo a los organismos intergubernamentales, para la formulación de políticas, normas y estándares de alcance mundial.</p></li>
+							<li><p class="rubik">Colaborar con los Estados Miembros en la implementación de estos estándares mediante     asistencia técnica y económica adecuada para los países que lo soliciten, y entablar alianzas eficaces con la sociedad civil.</p></li>
+							<li><p class="rubik">Dirigir y coordinar el trabajo del sistema de las Naciones Unidas en cuanto a la igualdad de  género, además de promover la rendición de cuentas, lo que incluye mediante la continua supervisión de los avances en todo el sistema.</p></li>
+							<li><p class="rubik">Exhortar a los sectores de ayuda humanitaria (servicios médicos, psicológicos y de reintegración social) a actuar con el fin de dar el apoyo necesario a los sobrevivientes de violencia sexual.</p></li>
+							<li><p class="rubik">Solicitar mediadores y supervisores de la cesación del fuego debidamente capacitados para afrontar casos de violencia sexual en conflictos armados con el fin de brindar el apoyo necesario a los afectados y dar el seguimiento pertinente a estos.</p></li>
+							<li><p class="rubik">Implementar programas y proyectos en los países para prevenir y erradicar la violencia de género.</p></li>
+							<li><p class="rubik">Monitorear y dar seguimiento al cumplimiento de los compromisos internacionales asumidos por los Estados en materia de igualdad de género.</p></li>
+							<li><p class="rubik">Publicar informes, estudios y evaluaciones sobre la situación de los derechos de las mujeres a nivel global, regional y nacional.</p></li>
+							<li><p class="rubik">Movilizar recursos financieros y técnicos para apoyar programas de género y fortalecer capacidades institucionales.</p></li>
+							<li><p class="rubik">Establecer alianzas estratégicas con sociedad civil, movimientos feministas, pueblos indígenas, comunidades afrodescendientes y organizaciones LGBTIQ+.</p></li>
+							<li><p class="rubik">* Formular recomendaciones y resoluciones orientadas a mejorar la protección y promoción de los derechos de las mujeres.</p></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<br><br>
+			
+			
+			<div class="comite-container">
+				<aside>
+					<img src="./Imagenes/Comites/17.png">
+				</aside>
+				<aside>
+					<img src="./Imagenes/Comites/18.png">
+				</aside>
+				<aside>
+					<img src="./Imagenes/Comites/19.png">
+				</aside>
+				<aside>
+					<img src="./Imagenes/Comites/20.png">
+				</aside>
+			</div>
+            
+			<br><br>
+			<h2 class="archivo">Consejo de Seguridad</h2>
+			<div class="c-content">
+				<div class="c-image" style="flex-basis: 30%; text-align: left;">
+					<img src="./Imagenes/Comites/22.png" class="comite-img">
+					<div class="btn-registro-container">
+						<a href="./Paginas/not_found.html" class="btn-registrob" target="_blank">Handbook</a>
+					</div>
+				</div>
+				<div class="c-text">
+					<h3 class="archivo">¿Qué es?</h3>
+					<br>
+					<p class="rubik">El Consejo de Seguridad tiene la responsabilidad primordial de mantener la paz y la seguridad internacionales. El Consejo de Seguridad tiene 15 miembros y cada miembro tiene un voto. De acuerdo con la Carta, todos los Miembros de la ONU convienen en aceptar y cumplir las decisiones del Consejo de Seguridad. Éste es el único órgano de la ONU cuyas decisiones los Estados Miembros, conforme a la Carta, están obligados a cumplir.</p>
+					<br>
+					<p class="rubik">Cuando se le presenta una controversia, la primera medida del Consejo es generalmente recomendar a las partes que lleguen a un acuerdo por medios pacíficos. Puede imponer embargos o sanciones económicas, o autorizar el uso de la fuerza para hacer cumplir los mandatos.</p>
+					<br>
+					<h3 class="archivo">Tópicos</h3>
+					<br>
+					<p class="rubik">Tópico A: El Pacífico armado: un campo de experimentación balística y nuclear sin frenos que tensa la política en la Península de Corea y aguas internacionales; intervención y diplomacia política como solución humanitaria.</p>
+					<br>
+					<p class="rubik">Tópico B: Franja de Gaza: un frente de muerte y genocidio promovido por un régimen y un sistema inhumano y omitivo; crisis humanitaria y seguridad regional.</p>
+					<br>
+					<h3 class="archivo">Facultades</h3>
+					<nav>
+						<ul>
+							<br>
+							<li><p class="rubik">Mantener la paz y la seguridad internacionales de conformidad con los propósitos y principios de las Naciones Unidas.</p></li>
+							<br>
+							<li><p class="rubik">Investigar toda controversia o situación que pueda crear fricción internacional.</p></li>
+							<br>
+							<li><p class="rubik">Recomendar métodos de ajuste de tales controversias, o condiciones de arreglo.</p></li>
+							<br>
+							<li><p class="rubik">Elaborar planes para el establecimiento de un sistema que reglamente los armamentos.</p></li>
+							<br>
+							<li><p class="rubik">Determinar si existe una amenaza a la paz o un acto de agresión y recomendar qué medidas se deben adoptar.</p></li>
+							<br>
+							<li><p class="rubik">Instar a los Miembros a que apliquen sanciones económicas y otras medidas que no entrañan el uso de la fuerza, con el fin de impedir o detener la agresión.</p></li>
+							<br>
+							<li><p class="rubik">Emprender acción militar contra un agresor.</p></li>
+							<br>
+							<li><p class="rubik">Recomendar el ingreso de nuevos Miembros.</p></li>
+							<br>
+							<li><p class="rubik">Ejercer las funciones de administración fiduciaria de las Naciones Unidas en "zonas estratégicas".</p></li>
+							<br>
+							<li><p class="rubik">Recomendar a la Asamblea General la designación del Secretario General y, junto con la Asamblea, elegir a los magisterios de la Corte Internacional de Justicia.</p></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<br><br>
+			
+			
+			<div class="comite-container">
+				<aside>
+					<img src="./Imagenes/Comites/23.png">
+				</aside>
+				<aside>
+					<img src="./Imagenes/Comites/24.png">
+				</aside>
+				<aside>
+					<img src="./Imagenes/Comites/25.png">
+				</aside>
+				<aside>
+					<img src="./Imagenes/Comites/26.png">
+				</aside>
+			</div>
+			
+
+        </div>
+        
+		<div class="Blanco">
+			<h1 id="BASES" class="archivo">Bases y Registro - FALCONMUN</h1>
+            
+			<div class="mun-content">
+				<iframe src="./Documentos/Convocatoria.pdf" width="100%" height="500px" style="border:none;"></iframe>
+			</div>
+
+			<div class="btn-registro-container">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfH86nnfYnT5VE9UyMTo2CQfEGcmRmqpbUUv7fOTkDefX0nWQ/viewform" class="btn-registro" target="_blank">Internos</a>
+			</div>
+			
+			<div class="btn-registro-container">
+				<a href="https://forms.gle/CrVcjneGC7UC7Rdh6" class="btn-registro" target="_blank">Externos</a>
+			</div>
+        </div>
+		
+		<footer class="pie-pagina">
+			<div class="grupo-1">
+				<div class="box">
+					<figure>
+						<a href="#">
+							<img src="./Imagenes/Logo.jpeg" style="width:90px;border-radius:50%;">
+						</a>
+					</figure>
+				</div>
+				<div class="box">
+					<h2>CONTACTANOS</h2>
+					<p>onu.halcones@gmail.com</p>
+				</div>
+				<div class="box">
+					<h2>SIGUENOS</h2>
+					<div class="red-social">
+						<a href="https://www.instagram.com/onuhalcones?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="  target="_blank"><img src="./Imagenes/insta.png" style="width:40px;"></img></a>
+					</div>
+				</div>
+				<div class="box">
+					<h2>UBICACIÓN</h2>
+					<p>Escuela Nacional Preparatoria N° 9 "Pedro de Alba" UNAM: Av. Insurgentes Nte. 1698, Lindavista, Gustavo A. Madero, 07300 Ciudad de México, CDMX</p>
+				</div>
+			</div>
+			<div class="grupo-2">
+				<small>&copy; 2025 <b>Pablo Enrique Mora Carlos</b> - Todos los Derechos Reservados.</small>
+			</div>
+		</footer>
+		
+    </div> 
+	
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			// Esto añade la clase 'abajo' cuando el scroll es mayor a 0
+			header.classList.toggle("abajo", window.scrollY > 0);
+		})
+	</script>
+</body>
+</html>
